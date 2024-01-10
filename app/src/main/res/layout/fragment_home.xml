@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/rectangle_1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#593EFF"
+        tools:ignore="MissingConstraints" >
+
+        <TextView
+            android:id="@+id/ai"
+            android:layout_width="415px"
+            android:layout_height="369px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="324px"
+            android:layout_marginTop="0px"
+            android:fontFamily="@font/bungee_shade"
+            android:gravity="center_horizontal|top"
+            android:text="AI"
+            android:textColor="#FFFFFF"
+            android:textSize="200px" />
+
+        <TextView
+            android:id="@+id/book_writer"
+            android:layout_width="match_parent"
+            android:layout_height="173px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="369px"
+            android:textSize="153px"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/abril_fatface"
+            android:gravity="center_horizontal|top"
+            android:text="Book Writer" />
+
+        <!-- Auto layout, variables, and unit scale are not yet supported -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="745px"
+            android:layout_marginBottom="-80px"
+            android:background="#FFFFFF"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="2dp"
+            >
+        <RelativeLayout
+            android:orientation="vertical"
+            android:id="@+id/rectangle_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/wk"
+                android:layout_width="470px"
+                android:layout_height="58px"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="300px"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30px"
+                android:text="Добро пожаловать"
+                android:gravity="center_horizontal|top"
+                android:textColor="#80593EFF"
+                />
+
+            <TextView
+                android:id="@+id/l1"
+                android:layout_width="470px"
+                android:layout_height="58px"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="-62px"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="90px"
+                android:text="Login"
+                android:gravity="center_horizontal|top"
+                android:textColor="#80593EFF"
+                />
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:layout_marginHorizontal="45px"
+                android:layout_marginTop="155px"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true">
+                <EditText
+                    android:padding="20px"
+                    android:textColor="@color/white"
+                    android:background="#80593EFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:hint="your login"
+                    android:textColorHint="#DD593EFF"
+                    android:id="@+id/login_tb"
+                ></EditText>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/l2"
+                android:layout_width="470px"
+                android:layout_height="58px"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="-51px"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="300px"
+                android:text="Пароль"
+                android:gravity="center_horizontal|top"
+                android:textColor="#80593EFF"
+                />
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:layout_alignParentLeft="true"
+                android:layout_marginHorizontal="45px"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="355px"
+                >
+
+                <EditText
+                    android:padding="20px"
+                    android:id="@+id/password_tb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#80593EFF"
+                    android:hint="your password"
+                    android:inputType="textPassword"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#DD593EFF"></EditText>
+            </androidx.cardview.widget.CardView>
+
+            <ProgressBar
+                android:id="@+id/loginproggress"
+                style="?android:attr/spinnerMode"
+                android:layout_width="130px"
+                android:layout_height="130px"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="240dp"
+                android:visibility="visible">
+
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/LoginResp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginHorizontal="105px"
+                android:layout_marginTop="600px"
+                android:fontFamily="@font/abril_fatface"
+                android:text="Login in pls"
+                android:textAlignment="center"
+                android:textColor="#593EFF"
+                android:textSize="12pt"
+                android:visibility="visible"></TextView>
+            <!-- button -->
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="140px"
+                android:layout_marginHorizontal="40px"
+                android:layout_marginBottom="140px"
+                android:backgroundTint="#FF3E68FF"
+                >
+            <Button
+                android:id="@+id/SendBtn"
+                android:background="#00000000"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Войти"
+                >
+            </Button>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

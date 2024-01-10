@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <RelativeLayout
+        android:id="@+id/rectangle_1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#593EFF"
+        tools:ignore="MissingConstraints" >
+
+        <TextView
+            android:id="@+id/ai"
+            android:layout_width="415px"
+            android:layout_height="369px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="324px"
+            android:layout_marginTop="0px"
+            android:fontFamily="@font/bungee_shade"
+            android:gravity="center_horizontal|top"
+            android:text="AI"
+            android:textColor="#FFFFFF"
+            android:textSize="200px" />
+
+        <TextView
+            android:id="@+id/book_writer"
+            android:layout_width="match_parent"
+            android:layout_height="173px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="369px"
+            android:textSize="153px"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/abril_fatface"
+            android:gravity="center_horizontal|top"
+            android:text="Book Writer" />
+
+        <!-- Auto layout, variables, and unit scale are not yet supported -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="745px"
+            android:layout_marginBottom="-80px"
+            android:background="#FFFFFF"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="2dp"
+            >
+        <RelativeLayout
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:id="@+id/Layout0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="470px"
+                android:layout_height="58px"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="62px"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="90px"
+                android:text="Введите название"
+                android:gravity="center_horizontal|top"
+                android:textColor="#80593EFF"
+                />
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="45px"
+                android:layout_marginTop="155px"
+                >
+
+                <EditText
+                    android:padding="20px"
+                    android:id="@+id/DiscriptionTb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#80593EFF"
+                    android:fontFamily="sans-serif"
+                    android:hint="New Book Title"
+                    android:textColor="@color/white"
+                    android:textColorHint="#DD593EFF" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="130px"
+                android:layout_width="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginHorizontal="40px"
+                android:layout_marginStart="100px"
+                android:layout_marginTop="290px"
+                android:layout_marginEnd="100px"
+                android:layout_marginBottom="100px">
+
+                <ProgressBar
+                    android:id="@+id/progressBar0"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:indeterminate="true"
+                    android:layout_height="20px"
+                    android:layout_marginTop="20px"
+                    android:visibility="invisible"
+                    android:progress="0" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:indeterminate="false"
+                    android:layout_height="20px"
+                    android:layout_marginTop="20px"
+                    android:visibility="invisible"
+                    android:progress="0" />
+
+                <TextView
+                    android:id="@+id/progressLable"
+                    android:layout_width="match_parent"
+                    android:layout_height="160px"
+                    android:fontFamily="sans-serif"
+                    android:text=""
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <!-- Kill WebSite Thread -->
+            <androidx.cardview.widget.CardView
+                android:visibility="invisible"
+                android:id="@+id/KillToggle_layout"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:layout_alignParentTop="true"
+                android:layout_marginHorizontal="30px"
+                android:layout_marginVertical="100px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="#303E68FF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="220px"
+                        android:textAlignment="center"
+                        android:layout_marginTop="40px"
+                        android:textSize="9pt"
+                        android:text="Процес остановится только на Клиенте. Хотите остановить этот процесс на сервере"
+                        >
+                </TextView>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_height="130px"
+                        android:layout_marginLeft="20px"
+                        android:layout_width="match_parent">
+                        <Button
+                            android:id="@+id/Still"
+                            android:layout_width="350px"
+                            android:layout_gravity="right"
+                            android:layout_height="130px"
+                            android:backgroundTint="#AA00AA00"
+                            android:text="Оставить"
+                            ></Button>
+                        <View
+                            android:layout_width="104dp"
+                            android:layout_height="10px"/>
+                        <Button
+                            android:id="@+id/Kill"
+                            android:layout_width="350px"
+                            android:layout_height="130px"
+                            android:backgroundTint="#AACC0000"
+                            android:text="Убить"
+                            ></Button>
+                    </LinearLayout>
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- button -->
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="140px"
+                android:layout_marginHorizontal="40px"
+                android:layout_marginBottom="140px"
+                android:backgroundTint="#FF3E68FF">
+            <Button
+                android:id="@+id/SendBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Создать книгу"
+                android:background="#00000000"
+                android:enabled="true"
+                >
+            </Button>
+        </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
